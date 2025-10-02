@@ -1,4 +1,4 @@
-def month(day, month) -> str:
+def find_season(day, month) -> str:
     match month:
         case 1 | 2 | 3:
             season = "winter"
@@ -8,6 +8,8 @@ def month(day, month) -> str:
             season = "summer"
         case 10 | 11 | 12:
             season = "fall"
+        case _:
+            season = "that's not a month bro"
 
     if month % 3 == 0 and day >= 21:
         match season:
@@ -23,4 +25,7 @@ def month(day, month) -> str:
     return season
 
 
+date = int(input("date -> "))
+month = int(input("month -> "))
 
+print(f"the season is {find_season(date, month)}")    
