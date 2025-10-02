@@ -1,2 +1,2 @@
 # informatica-polito
-Repository for storing lab sessions, projects, etc.
+A repository for storing PoliTo lab sessions, projects, etc.
