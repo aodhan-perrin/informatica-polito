@@ -1,4 +1,4 @@
-def find_season(day, month) -> str:
+def find_season(day: int, month: int) -> str:
     match month:
         case 1 | 2 | 3:
             season = "winter"

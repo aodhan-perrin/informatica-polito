@@ -1,4 +1,4 @@
-def find_seq(sequence, snippet):
+def find_seq(sequence: str, snippet: str):
     if snippet in sequence:
         print(f"first instance: [{sequence.index(snippet)}]")
         print(f"no. of instances: {sequence.count(snippet)}")

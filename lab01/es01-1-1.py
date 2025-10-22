@@ -1,4 +1,4 @@
-def conflict_check(event1, event2) -> bool:
+def conflict_check(event1: int, event2: int) -> bool:
     start = max(event1[0], event2[0])   # index [0] for start time
     end = min(event1[1], event2[1])     # index [1] for end time
 
