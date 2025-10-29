@@ -12,5 +12,5 @@ def subs(string: str) -> list:
 string = input("insert string -> ")
 substrings = sorted(subs(string), key=len)
 
-for string in substrings:
-    print(string)
+for i in substrings:
+    print(i)
