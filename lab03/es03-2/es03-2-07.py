@@ -31,14 +31,12 @@ while True:
 
     if start_unit in units:
         compatible_units = conversionCheck(start_unit, units)
-        
         while True:
             end_unit = input(f"convert to {compatible_units} -> ")
 
             if end_unit in compatible_units:
                 value = float(input(f"value of {start_unit} to convert -> "))
                 print(f"{convert(start_unit, end_unit, value)}{end_unit}")
-                
                 break
             else:
                 print("error: incompatible conversion\n")
