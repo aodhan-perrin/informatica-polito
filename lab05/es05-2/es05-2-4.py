@@ -4,7 +4,7 @@ Rs = 8   # speaker impedence (ohms)
 Ra = 20  # amp resistance (ohms)
 
 
-def f_range(start, stop, step):
+def f_range(start: float, stop: float, step: float) -> float:
     while start < stop:
         yield start
         start += step
